@@ -2,6 +2,16 @@
 name = "drv8833-driver"
 version = "0.1.0"
 edition = "2021"
+authors = ["milewski", "Rafael Milewski <rafael.milewski@gmail.com>"]
+description = "A driver for DRV8833 motor driver."
+repository = "https://github.com/milewski/drv8833-driver"
+categories = ["embedded", "hardware-support"]
+keywords = ["drv8833", "driver", "motor", "controller", "embedded-hal-driver"]
+license = "MIT"
+readme = "README.md"
 
 [dependencies]
-embedded-hal = "1.0.0"
+embedded-hal = "^1.0.0"
+
+[dev-dependencies]
+embedded-hal-mock = { version = "0.10.0", features = ["eh1"], default-features = false }
