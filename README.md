@@ -1,5 +1,6 @@
 # Rust Driver for DRV8833 Dual Bridge Motor Driver
 
+[![Build](https://github.com/milewski/drv8833-driver/actions/workflows/rust.yml/badge.svg?branch=main)](https://github.com/milewski/drv8833-driver/actions/workflows/rust.yml)
 [![Crate](https://img.shields.io/crates/v/drv8833-driver.svg)](https://crates.io/crates/drv8833-driver)
 [![Documentation](https://docs.rs/drv8833-driver/badge.svg)](https://docs.rs/drv8833-driver)
 
