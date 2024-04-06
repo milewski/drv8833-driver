@@ -2,7 +2,7 @@
 name = "drv8833-driver"
 version = "0.1.0"
 edition = "2021"
-authors = ["milewski", "Rafael Milewski <rafael.milewski@gmail.com>"]
+authors = ["Rafael Milewski <rafael.milewski@gmail.com>"]
 description = "A driver for DRV8833 motor driver."
 repository = "https://github.com/milewski/drv8833-driver"
 categories = ["embedded", "hardware-support"]

@@ -1,10 +1,12 @@
-# Rust Driver for [DRV8833 Dual Bridge Motor Driver](https://www.ti.com/lit/ds/symlink/drv8833.pdf)
+# Rust Driver for DRV8833 Dual Bridge Motor Driver
 
 [![Crate](https://img.shields.io/crates/v/drv8833-driver.svg)](https://crates.io/crates/drv8833-driver)
 [![Documentation](https://docs.rs/drv8833-driver/badge.svg)](https://docs.rs/drv8833-driver)
 
 Driver for the DRV8833 motor driver, supporting the operation of the motor in various modes.
 See the [documentation](https://docs.rs/drv8833-driver) for more details.
+
+For detailed information on the DRV8833, refer to the [datasheet](https://www.ti.com/lit/ds/symlink/drv8833.pdf).
 
 # Installation
 
@@ -38,7 +40,7 @@ fn main() -> anyhow::Result<()> {
 
     // Initialize LEDC timer and driver
     let timer = LedcTimerDriver::new(peripherals.ledc.timer0, &TimerConfig::default())?;
-    let pwm = LedcDriver::new(peripherals.ledc.channel0, &timer, peripherals.pins.gpio3)?;
+    let pwm = LedcDriver::new(peripherals.ledc.channel0, &timer, peripherals.pins.gpio5)?;
 
     // Initialize motor driver
     let motor = MotorDriver::new_pwm_parallel(
